@@ -1,0 +1,67 @@
+h1, h2, p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar */
+/* Elements to line up next to each */
+.inline-block {
+    display: inline-block; /* navbar to line up next to each other */
+    vertical-align: top; /* ensure all elements align next to one another */
+}
+
+/* fill the width of our container */
+.logo {
+    width: 20%;
+    padding: 1%;
+    text-align: center;
+}
+
+/* primary navidation */
+nav {
+    width: 70%;
+    padding: 1%;
+    text-align: right;
+}
+
+ul {
+    width: 50%; /* align unordered list in its container to the right */
+    margin-left: auto;
+}
+
+/* giving navigation menu padding */
+li .inline-block {
+    padding-top: 1%;
+    padding-right: 16px;
+    padding-bottom: 1%;
+    padding-left: 16px
+}
+
+/*  hero image  */
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* My Skills */
+.flexContainer {
+    display: flex 
+}
+
+/* footer */
+footer {
+    background-color: #11161C;
+    padding: center;
+    text-align: center;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: center;
+    color: #ffffff;
+}
