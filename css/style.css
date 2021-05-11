@@ -23,13 +23,14 @@ nav {
     text-align: right;
 }
 
-ul {
+/* Primary Navigation */
+.primaryNav {
     width: 50%; /* align unordered list in its container to the right */
     margin-left: auto;
 }
 
 /* giving navigation menu padding */
-li .inline-block {
+.inline-block {
     padding-top: 1%;
     padding-right: 16px;
     padding-bottom: 1%;
@@ -49,7 +50,19 @@ li .inline-block {
 
 /* My Skills */
 .flexContainer {
-    display: flex 
+    display: flex;
+    width: 100%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flexContainer {
+      flex-direction: column;
+    }
+  }
+
+.flexContainer div {
+    width: 33%;
 }
 
 /* footer */
