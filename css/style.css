@@ -70,6 +70,10 @@ nav {
     width: 33%;
 }
 
+.flexContainer .container {
+    width: 92%;
+}
+
 /* Card CSS*/
 .card {
     /* Add shadows to create the "card" effect */
@@ -77,6 +81,7 @@ nav {
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     background-color: #ffffff;
+    margin: 24px 8px 24px 8px;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
@@ -85,14 +90,35 @@ img {
 }
   
 /* On mouse-over, add a deeper shadow */
-  .card:hover {
+.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+}
   
-  /* Add some padding inside the card container */
-  .container {
-    padding: 8px 8px;
-  }
+/* Add some padding inside the card container */
+.container {
+    padding: 8px 16px 8px 16px;
+}
+
+/* My Work */
+/* Convert my work <section> tag into a grid container.*/
+.workGrid {
+    display: grid; 
+}
+
+/* Item1 gets the name "myArea" and spands all five columns in a five columns grid layout */
+.item1 {
+    position: left;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    grid-area: myArea;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-areas: 'myArea myArea myArea myArea myArea';
+    grid-template-columns: auto auto auto auto;
+}
 
 /* Button Styling */
 .buttonKeyline {
@@ -103,6 +129,7 @@ img {
     height: 50px;
     font-size: 16px;
     color: #CF9C98;
+    margin: 8px 8px 32px 8px;
   }
 
 /* footer */
