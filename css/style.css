@@ -103,22 +103,17 @@ img {
 /* Convert my work <section> tag into a grid container.*/
 .workGrid {
     display: grid; 
+    grid-template-columns: auto auto auto;
+    /* grid-template-areas: 'myArea myArea myArea'; */
+    /*grid-template-rows: 100px 300px;*/
+    /* grid-template-columns: 30% 70%; */
 }
 
 /* Item1 gets the name "myArea" and spands all five columns in a five columns grid layout */
-.item1 {
-    position: left;
-    display: flex;
-    flex-direction: column;
-    width: 20%;
+/* .item1, .item2, .item3 {
     grid-area: myArea;
-}
 
-.grid-container {
-    display:grid;
-    grid-template-areas: 'myArea myArea myArea myArea myArea';
-    grid-template-columns: auto auto auto auto;
-}
+} */
 
 /* Button Styling */
 .buttonKeyline {
