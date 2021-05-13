@@ -1,4 +1,4 @@
-h1, h2, p, li {
+h1, h2, h3, h4, p, li {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -59,12 +59,7 @@ nav {
     width: 100%;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
-    .flexContainer {
-      flex-direction: column;
-    }
-  }
+
 
 .flexContainer div {
     width: 33%;
@@ -101,19 +96,32 @@ img {
 
 /* My Work */
 /* Convert my work <section> tag into a grid container.*/
+/* Item1 gets the name "myArea" and spands all five columns in a five columns grid layout */
+
+/*.item1 {
+    grid-area: myArea;
+    float: left;
+} 
 .workGrid {
     display: grid; 
-    grid-template-columns: auto auto auto;
-    /* grid-template-areas: 'myArea myArea myArea'; */
-    /*grid-template-rows: 100px 300px;*/
-    /* grid-template-columns: 30% 70%; */
+    grid-template-areas:'myArea myArea ...'
+    grid-template-columns: 2fr 1fr;
 }
 
-/* Item1 gets the name "myArea" and spands all five columns in a five columns grid layout */
-/* .item1, .item2, .item3 {
-    grid-area: myArea;
+.item2 {
+    grid-area: myArea2;
+    float: right;
+} 
+.workGrid {
+    display: grid; 
+    grid-template-areas:'... myArea2 myAre2a myArea2'
+}*/
 
-} */
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
 
 /* Button Styling */
 .buttonKeyline {
@@ -140,3 +148,15 @@ footer ul {
     padding: center;
     color: #ffffff;
 }
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .flexContainer div{
+        width: 100%;    
+    }
+
+}
+
