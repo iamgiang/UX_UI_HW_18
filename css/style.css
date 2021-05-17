@@ -15,7 +15,7 @@ h1, h2, h3, h4, p, li {
 
 /* fill the width of our container */
 .logo {
-    width: 20%;
+    width: 10%;
     padding: 1%;
     text-align: center;
 }
@@ -95,27 +95,30 @@ img {
 }
 
 /* My Work */
-/* Convert my work <section> tag into a grid container.*/
-/* Item1 gets the name "myArea" and spands all five columns in a five columns grid layout */
-
-/*.item1 {
-    grid-area: myArea;
-    float: left;
-} 
-.workGrid {
-    display: grid; 
-    grid-template-areas:'myArea myArea ...'
-    grid-template-columns: 2fr 1fr;
+.myWork {
+    background-color: #fffff;
+    padding: 24px 80px 80px 80px;
+    color: #ffffff;
 }
 
-.item2 {
-    grid-area: myArea2;
-    float: right;
-} 
+.myWork .item1 img {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.myWork .item2 img {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.myWork .item3 img {
+    border-radius: 8px 0px 0px 8px;
+}
+
+/* Convert my work <section> tag into a grid container.*/
 .workGrid {
-    display: grid; 
-    grid-template-areas:'... myArea2 myAre2a myArea2'
-}*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
 
 .workGrid {
     display: grid;
